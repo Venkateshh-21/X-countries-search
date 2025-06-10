@@ -75,7 +75,7 @@ const CountriesSearch = () => {
                       width:"100px",
                       height:"90px"
                   }}/>
-                  <h4>{a.common}</h4>
+                 <span><p> <h2>{a.common}</h2></p></span>
               </div>
           })}
       </div>
