@@ -20,8 +20,8 @@ const CountriesSearch = () => {
   fetchData()
   },[])
   const trackSearch=(e)=>{
-    setSearchedKey(e.target.value)
-    setFiltered(countries.filter((a)=>a.common.toLowerCase().includes(searchedKey)))
+    setSearchedKey(e.target.value.toLowerCase())
+    setFiltered(countries.filter((a)=>a.common.toLowerCase().includes(e.target.value.toLowerCase())))
   }
     return (
         <div>
