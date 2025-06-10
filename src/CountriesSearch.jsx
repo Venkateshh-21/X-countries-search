@@ -42,7 +42,7 @@ const CountriesSearch = () => {
       }}>
         
           { searchedKey? filtered.map((a)=>{
-            return <div style={{
+            return <div className="countryCard"style={{
                   height:"150px",
                   width:"150px",
                   border:"1px solid grey",
@@ -60,7 +60,7 @@ const CountriesSearch = () => {
                  <span><p> <h2>{a.common}</h2></p></span>
               </div>
           }):countries.map((a)=>{
-              return <div style={{
+              return <div className="countryCard" style={{
                   height:"150px",
                   width:"150px",
                   border:"1px solid grey",
